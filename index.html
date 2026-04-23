@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavan Madduri - Cloud-Native & AI Infrastructure Engineer</title>
+  <meta name="description" content="Senior Cloud Platform Engineer | CNCF Golden Kubestronaut | Open Source Contributor | Researcher in AI/ML Infrastructure & Kubernetes">
+  <meta property="og:title" content="Pavan Madduri - Cloud-Native & AI Infrastructure Engineer">
+  <meta property="og:description" content="Senior Cloud Platform Engineer at W.W. Grainger | CNCF Golden Kubestronaut | 13+ peer-reviewed publications | 26+ PRs across 15+ CNCF/ASWF projects">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pmady.github.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">PM</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#opensource" class="nav-link">Open Source</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#writing" class="nav-link">Writing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-img-wrapper">
+        <img src="assets/img/profile.jpg" alt="Pavan Madduri" class="hero-img">
+      </div>
+      <h1 class="hero-title">Pavan Madduri</h1>
+      <p class="hero-subtitle">Senior Cloud Platform Engineer</p>
+      <p class="hero-tagline">Building GPU/AI infrastructure at scale &middot; CNCF Golden Kubestronaut &middot; Open Source &middot; Researcher</p>
+      <div class="hero-badges">
+        <span class="badge badge-gold"><i class="fas fa-certificate"></i> Golden Kubestronaut</span>
+        <span class="badge badge-blue"><i class="fas fa-cloud"></i> CNCF Contributor</span>
+        <span class="badge badge-purple"><i class="fas fa-graduation-cap"></i> 13+ Publications</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#opensource" class="btn btn-primary">View Contributions</a>
+        <a href="#research" class="btn btn-outline">Research &amp; Publications</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/pavanmadduri/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/pmady" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=au0O-8oAAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.researchgate.net/profile/Pavan-Madduri-2" target="_blank" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+        <a href="https://medium.com/@pavan4devops" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title fade-in">About Me</h2>
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p>
+            Senior Cloud Platform Engineer at <strong>W.W. Grainger, Inc.</strong> with deep expertise in cloud-native GPU/AI infrastructure,
+            Kubernetes ecosystems, and platform engineering. I build open-source tools for GPU workload autoscaling,
+            observability, and topology-aware incident response.
+          </p>
+          <p>
+            Actively contributing to <strong>CNCF</strong> and <strong>ASWF</strong> projects with 26+ merged PRs across 15+ projects.
+            Published researcher with 13+ peer-reviewed papers on AI/ML infrastructure, Kubernetes, and platform engineering.
+          </p>
+          <p>
+            Recognized as a <strong>CNCF Golden Kubestronaut</strong> &mdash; one of the elite professionals holding all five Kubernetes certifications.
+            Community member of the <strong>Dragonfly</strong> project and active contributor to <strong>Volcano</strong>, <strong>KEDA</strong>,
+            <strong>OpenTelemetry</strong>, and more.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number" data-count="26">0</div>
+            <div class="stat-label">Open Source PRs</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Projects Contributed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="13">0</div>
+            <div class="stat-label">Publications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="16">0</div>
+            <div class="stat-label">CNCF Certifications</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="section section-alt" id="achievements">
+    <div class="container">
+      <h2 class="section-title fade-in">Achievements</h2>
+
+      <!-- Golden Kubestronaut Banner -->
+      <div class="achievement-banner fade-in">
+        <div class="achievement-badge">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="achievement-info">
+          <h3>CNCF Golden Kubestronaut</h3>
+          <p>One of the elite professionals who have earned <strong>all</strong> CNCF Kubernetes and Cloud Native certifications &mdash; demonstrating comprehensive expertise across the entire cloud-native ecosystem.</p>
+        </div>
+      </div>
+
+      <!-- Kubestronaut Core (5) -->
+      <h3 class="subsection-title fade-in"><i class="fas fa-star"></i> Kubestronaut Core Certifications</h3>
+      <div class="certs-grid certs-grid-5 fade-in">
+        <div class="cert-card cert-gold">
+          <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>CKS</h3>
+          <p>Certified Kubernetes Security Specialist</p>
+        </div>
+        <div class="cert-card cert-gold">
+          <div class="cert-icon"><i class="fas fa-server"></i></div>
+          <h3>CKA</h3>
+          <p>Certified Kubernetes Administrator</p>
+        </div>
+        <div class="cert-card cert-gold">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <h3>CKAD</h3>
+          <p>Certified Kubernetes Application Developer</p>
+        </div>
+        <div class="cert-card cert-gold">
+          <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+          <h3>KCNA</h3>
+          <p>Kubernetes &amp; Cloud Native Associate</p>
+        </div>
+        <div class="cert-card cert-gold">
+          <div class="cert-icon"><i class="fas fa-lock"></i></div>
+          <h3>KCSA</h3>
+          <p>Kubernetes &amp; Cloud Native Security Associate</p>
+        </div>
+      </div>
+
+      <!-- Golden Kubestronaut Additional Certs -->
+      <h3 class="subsection-title fade-in"><i class="fas fa-certificate"></i> Golden Kubestronaut Certifications</h3>
+      <div class="certs-grid fade-in">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>PCA</h3>
+          <p>Prometheus Certified Associate</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-code-branch"></i></div>
+          <h3>CGOA</h3>
+          <p>Certified GitOps Associate</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>CCA</h3>
+          <p>Certified Cilium Associate</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-arrows-spin"></i></div>
+          <h3>CAPA</h3>
+          <p>Certified Argo Project Associate</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-diagram-project"></i></div>
+          <h3>ICA</h3>
+          <p>Istio Certified Associate</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-gavel"></i></div>
+          <h3>KCA</h3>
+          <p>Kyverno Certified Associate</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h3>OTCA</h3>
+          <p>OpenTelemetry Certified Associate</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>CNPA</h3>
+          <p>Cloud Native Platform Associate</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-cubes"></i></div>
+          <h3>CNPE</h3>
+          <p>Cloud Native Platform Engineer</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-puzzle-piece"></i></div>
+          <h3>CBA</h3>
+          <p>Certified Backstage Associate</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-terminal"></i></div>
+          <h3>LFCS</h3>
+          <p>Linux Foundation Certified SysAdmin</p>
+        </div>
+      </div>
+
+      <!-- Community Recognition -->
+      <h3 class="subsection-title fade-in"><i class="fas fa-users"></i> Community Recognition</h3>
+      <div class="recognition-grid fade-in">
+        <div class="recognition-card">
+          <i class="fas fa-handshake"></i>
+          <h4>Dragonfly Community Member</h4>
+          <p>Elected via community governance vote &mdash; contributing to AI/ML model distribution, Helm charts, and dragonfly-injector</p>
+        </div>
+        <div class="recognition-card">
+          <i class="fas fa-code-pull-request"></i>
+          <h4>CNCF Contributor</h4>
+          <p>Active contributor across Volcano, Dragonfly, KEDA, Kubernetes, OpenTelemetry, and more</p>
+        </div>
+        <div class="recognition-card">
+          <i class="fas fa-film"></i>
+          <h4>ASWF Contributor</h4>
+          <p>Contributing to Academy Software Foundation projects &mdash; OpenColorIO, OpenCue, OpenImageIO, RAWtoACES, xSTUDIO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Source Contributions -->
+  <section class="section" id="opensource">
+    <div class="container">
+      <h2 class="section-title fade-in">Original Open Source Contributions</h2>
+      <p class="section-subtitle fade-in">Active contributor to CNCF &amp; ASWF foundation projects &mdash; 26+ PRs across 15+ repos</p>
+
+      <h3 class="subsection-title fade-in"><i class="fas fa-cloud"></i> CNCF (Cloud Native Computing Foundation)</h3>
+      <div class="contrib-grid fade-in">
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <img src="https://raw.githubusercontent.com/cncf/artwork/main/projects/volcano/icon/color/volcano-icon-color.svg" alt="Volcano" class="contrib-logo" onerror="this.style.display='none'">
+            <div>
+              <h4>Volcano</h4>
+              <p class="contrib-desc">Cloud-native batch scheduling for AI/HPC</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/volcano-sh/volcano/pull/5095" target="_blank">#5095</a> GPU NUMA topology awareness in scheduler</li>
+            <li><a href="https://github.com/volcano-sh/apis/pull/229" target="_blank">apis#229</a> GPUInfo type to NumatopoSpec CRD</li>
+            <li><a href="https://github.com/volcano-sh/resource-exporter/pull/12" target="_blank">resource-exporter#12</a> GPU NUMA topology discovery via sysfs</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <img src="https://raw.githubusercontent.com/cncf/artwork/main/projects/dragonfly/icon/color/dragonfly-icon-color.svg" alt="Dragonfly" class="contrib-logo" onerror="this.style.display='none'">
+            <div>
+              <h4>Dragonfly</h4>
+              <p class="contrib-desc">P2P file distribution &amp; image acceleration</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/dragonflyoss/client/pull/1665" target="_blank">client#1665</a> Hugging Face backend with hf:// protocol</li>
+            <li><a href="https://github.com/dragonflyoss/client/pull/1673" target="_blank">client#1673</a> ModelScope backend with modelscope:// protocol</li>
+            <li><a href="https://github.com/dragonflyoss/d7y.io/pull/386" target="_blank">d7y.io#386</a> hf:// protocol documentation</li>
+            <li><a href="https://github.com/dragonflyoss/d7y.io/pull/398" target="_blank">d7y.io#398</a> P2P AI model downloads blog post</li>
+            <li><a href="https://github.com/dragonflyoss/helm-charts/pull/455" target="_blank">helm-charts#455</a> Injector support to helm chart</li>
+            <li><a href="https://github.com/dragonflyoss/helm-charts/pull/480" target="_blank">helm-charts#480</a> Replace deprecated MySQL chart</li>
+          </ul>
+          <span class="contrib-badge">Community Member</span>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <img src="https://raw.githubusercontent.com/cncf/artwork/main/projects/kubernetes/icon/color/kubernetes-icon-color.svg" alt="Kubernetes" class="contrib-logo" onerror="this.style.display='none'">
+            <div>
+              <h4>Kubernetes</h4>
+              <p class="contrib-desc">Production-grade container orchestration</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/kubernetes/website/pull/53891" target="_blank">#53891</a> Document deployment.kubernetes.io/* annotations</li>
+            <li><a href="https://github.com/kubernetes/website/pull/53892" target="_blank">#53892</a> kubectl apply view-last-applied docs</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <img src="https://raw.githubusercontent.com/cncf/artwork/main/projects/tikv/icon/color/tikv-icon-color.svg" alt="TiKV" class="contrib-logo" onerror="this.style.display='none'">
+            <div>
+              <h4>TiKV</h4>
+              <p class="contrib-desc">Distributed transactional key-value database</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/tikv/tikv/pull/19225" target="_blank">#19225</a> Add AGENTS.md for AI agent guidance</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <img src="https://raw.githubusercontent.com/cncf/artwork/main/projects/keda/icon/color/keda-icon-color.svg" alt="KEDA" class="contrib-logo" onerror="this.style.display='none'">
+            <div>
+              <h4>KEDA</h4>
+              <p class="contrib-desc">Kubernetes event-driven autoscaling</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/kedacore/keda-docs/pull/1658" target="_blank">keda-docs#1658</a> Remove deprecated metricName from docs</li>
+            <li><a href="https://github.com/kedacore/keda/issues/7538" target="_blank">#7538</a> GPU/AI inference scaler architectural analysis</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <img src="https://raw.githubusercontent.com/cncf/artwork/main/projects/opentelemetry/icon/color/opentelemetry-icon-color.svg" alt="OpenTelemetry" class="contrib-logo" onerror="this.style.display='none'">
+            <div>
+              <h4>OpenTelemetry</h4>
+              <p class="contrib-desc">Observability framework</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/open-telemetry/opentelemetry.io/pull/8632" target="_blank">#8632</a> Add .NET troubleshooting page</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <div class="contrib-logo-placeholder"><i class="fas fa-server"></i></div>
+            <div>
+              <h4>Metal&sup3;</h4>
+              <p class="contrib-desc">Bare metal host provisioning for K8s</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/metal3-io/metal3-docs/pull/624" target="_blank">#624</a> Fix redirect links in tryit.md</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <div class="contrib-logo-placeholder"><i class="fas fa-box"></i></div>
+            <div>
+              <h4>kpt</h4>
+              <p class="contrib-desc">K8s-native packaging &amp; resource management</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/kptdev/kpt/pull/4278" target="_blank">#4278</a> Fix kpt fn doc for KRM functions</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <h3 class="subsection-title fade-in"><i class="fas fa-film"></i> ASWF (Academy Software Foundation)</h3>
+      <div class="contrib-grid fade-in">
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <div class="contrib-logo-placeholder"><i class="fas fa-palette"></i></div>
+            <div>
+              <h4>OpenColorIO</h4>
+              <p class="contrib-desc">Color management library</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/AcademySoftwareFoundation/OpenColorIO/pull/2229" target="_blank">#2229</a> Release signing workflow</li>
+            <li><a href="https://github.com/AcademySoftwareFoundation/OpenColorIO/pull/2230" target="_blank">#2230</a> Dependabot configuration</li>
+            <li><a href="https://github.com/AcademySoftwareFoundation/OpenColorIO/pull/2243" target="_blank">#2243</a> Vulkan unit test framework</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <div class="contrib-logo-placeholder"><i class="fas fa-clapperboard"></i></div>
+            <div>
+              <h4>OpenCue</h4>
+              <p class="contrib-desc">Cloud rendering management</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/AcademySoftwareFoundation/OpenCue/pull/2134" target="_blank">#2134</a> Scheduled subscription recalculation</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <div class="contrib-logo-placeholder"><i class="fas fa-image"></i></div>
+            <div>
+              <h4>OpenImageIO</h4>
+              <p class="contrib-desc">Image processing library</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/AcademySoftwareFoundation/OpenImageIO/pull/4976" target="_blank">#4976</a> Fix IBA::compare_Yee() channel access</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <div class="contrib-logo-placeholder"><i class="fas fa-camera"></i></div>
+            <div>
+              <h4>RAWtoACES</h4>
+              <p class="contrib-desc">RAW to ACES conversion</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/AcademySoftwareFoundation/rawtoaces/pull/222" target="_blank">#222</a> Build developer documentation</li>
+          </ul>
+        </div>
+
+        <div class="contrib-card">
+          <div class="contrib-header">
+            <div class="contrib-logo-placeholder"><i class="fas fa-play"></i></div>
+            <div>
+              <h4>xSTUDIO</h4>
+              <p class="contrib-desc">Playback &amp; review application</p>
+            </div>
+          </div>
+          <ul class="contrib-list">
+            <li><a href="https://github.com/AcademySoftwareFoundation/xstudio/pull/186" target="_blank">#186</a> Fix broken build guide links</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Publications -->
+  <section class="section section-alt" id="research">
+    <div class="container">
+      <h2 class="section-title fade-in">Scholarly Articles &amp; Publications</h2>
+      <p class="section-subtitle fade-in">13+ peer-reviewed research papers on Cloud-Native, Kubernetes, AI/ML Operations, and Platform Engineering</p>
+
+      <div class="research-links fade-in">
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=au0O-8oAAAAJ" target="_blank" class="btn btn-sm"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Pavan-Madduri-2" target="_blank" class="btn btn-sm"><i class="fab fa-researchgate"></i> ResearchGate</a>
+      </div>
+
+      <div class="research-category fade-in">
+        <h3 class="category-title"><i class="fas fa-robot"></i> AI &amp; Agentic Systems</h3>
+        <div class="papers-grid">
+          <div class="paper-card">
+            <span class="paper-num">1</span>
+            <h4>AI Security: Preemptive Cybersecurity &mdash; Using AI Agents for Proactive Threat Hunting in Cloud-Native Environments</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:2osOgNQ5qMEC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+              <a href="https://www.researchgate.net/profile/Pavan-Madduri-2" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a>
+            </div>
+          </div>
+          <div class="paper-card">
+            <span class="paper-num">2</span>
+            <h4>Agentic AI Introduction: Model Context Protocol (MCP) &mdash; Bridging LLMs and Real-Time Kubernetes Observability</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:LkGwnXOMwfcC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+              <a href="https://www.researchgate.net/profile/Pavan-Madduri-2" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a>
+            </div>
+          </div>
+          <div class="paper-card">
+            <span class="paper-num">3</span>
+            <h4>Scale &amp; LLM-Ops: Architecting LLM-as-a-Service &mdash; Infrastructure for High-Concurrency Agentic Workloads</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:qjMakFHDy7sC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+              <a href="https://www.researchgate.net/profile/Pavan-Madduri-2" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-category fade-in">
+        <h3 class="category-title"><i class="fas fa-heartbeat"></i> SRE &amp; Self-Healing Infrastructure</h3>
+        <div class="papers-grid">
+          <div class="paper-card">
+            <span class="paper-num">4</span>
+            <h4>Agentic SRE Teams: Human-Agent Collaboration &mdash; A New Operational Model for Autonomous Incident Response</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:UeHWp8X0CEIC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+          <div class="paper-card">
+            <span class="paper-num">5</span>
+            <h4>Autonomous Remediation: Reinforcement Learning for Self-Healing Infrastructure and Human-Agent Collaboration</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:zYLM7Y9cAGgC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+          <div class="paper-card">
+            <span class="paper-num">6</span>
+            <h4>From PagerDuty to &lsquo;Agentic Ops&rsquo;: The Rise of Self-Healing Kubernetes</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:WF5omc3nYNoC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-category fade-in">
+        <h3 class="category-title"><i class="fas fa-layer-group"></i> Platform Engineering &amp; GitOps</h3>
+        <div class="papers-grid">
+          <div class="paper-card">
+            <span class="paper-num">7</span>
+            <h4>Platform Engineering Foundations: The IDP &mdash; Reducing Cognitive Load for Java Developers</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:Tyk-4Ss8FVUC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+          <div class="paper-card">
+            <span class="paper-num">8</span>
+            <h4>GitOps &amp; Stability: Formal Verification of ArgoCD Manifests &mdash; Preventing Deployment Drift</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:roLk4NBRz8UC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+          <div class="paper-card">
+            <span class="paper-num">9</span>
+            <h4>Beyond Basic Sync: Why ArgoCD v3 is the Backbone of Modern Platform Engineering</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:ufrVoPGSRksC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-category fade-in">
+        <h3 class="category-title"><i class="fas fa-dharmachakra"></i> Kubernetes &amp; Cloud Infrastructure</h3>
+        <div class="papers-grid">
+          <div class="paper-card">
+            <span class="paper-num">10</span>
+            <h4>The Efficiency Era: How Kubernetes v1.35 Finally Solves the &ldquo;Restart&rdquo; Headache</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:8k81kl-MbHgC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+          <div class="paper-card">
+            <span class="paper-num">11</span>
+            <h4>FinOps: Predictive Autoscaling Using Time-Series Analysis to Reduce Cloud Waste in EKS Clusters</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:W7OEmFMy1HYC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+          <div class="paper-card">
+            <span class="paper-num">12</span>
+            <h4>Zero-Trust Infrastructure: Automated Identity Governance in Kubernetes &mdash; Framework for Zero-Trust Microservices</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:_FxGoFyzp5QC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+          <div class="paper-card">
+            <span class="paper-num">13</span>
+            <h4>Multi-Cluster Orchestration: Cross-Cluster Service Meshes in High-Traffic Retail Environments</h4>
+            <div class="paper-links">
+              <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=au0O-8oAAAAJ&citation_for_view=au0O-8oAAAAJ:eQOLeE2rZwMC" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title fade-in">Featured Projects</h2>
+      <p class="section-subtitle fade-in">Open source tools for GPU autoscaling, observability, and topology-aware infrastructure</p>
+      <div class="projects-grid fade-in">
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-microchip project-icon"></i>
+            <div class="project-links-top">
+              <a href="https://github.com/pmady/keda-gpu-scaler" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>KEDA GPU Scaler</h3>
+          <p>KEDA External gRPC Scaler for GPU/AI workloads. Native NVML metrics, DaemonSet deployment, pre-built scaling profiles for vLLM, Triton, and training workloads.</p>
+          <div class="project-tags">
+            <span>Go</span><span>gRPC</span><span>NVML</span><span>Kubernetes</span><span>Helm</span>
+          </div>
+          <p class="project-ref">Referenced in <a href="https://github.com/kedacore/keda/issues/7538" target="_blank">KEDA #7538</a></p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-chart-line project-icon"></i>
+            <div class="project-links-top">
+              <a href="https://github.com/pmady/otel-gpu-receiver" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>OpenTelemetry GPU Receiver</h3>
+          <p>OpenTelemetry Collector receiver for NVIDIA GPU metrics. GPU utilization, memory, temperature via NVML. Standard OTLP export with built-in Prometheus exporter.</p>
+          <div class="project-tags">
+            <span>Go</span><span>OpenTelemetry</span><span>NVML</span><span>Prometheus</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-diagram-project project-icon"></i>
+            <div class="project-links-top">
+              <a href="https://github.com/pmady/kube-topology-agent" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Kube Topology Agent</h3>
+          <p>Kubernetes knowledge graph &amp; automated root-cause analysis. Real-time resource topology, graph-based incident investigation, AlertManager webhook integration.</p>
+          <div class="project-tags">
+            <span>Go</span><span>Kubernetes API</span><span>Knowledge Graph</span><span>Helm</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-brain project-icon"></i>
+            <div class="project-links-top">
+              <a href="https://github.com/pmady/kubeai-autoscaler" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>KubeAI Autoscaler</h3>
+          <p>Kubernetes-native autoscaler for AI inference workloads. Custom scaling algorithms, GPU-focused policies, latency SLA enforcement, Prometheus metrics.</p>
+          <div class="project-tags">
+            <span>Go</span><span>Kubernetes</span><span>CRD</span><span>Helm</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-book-open project-icon"></i>
+            <div class="project-links-top">
+              <a href="https://github.com/pmady/golden-kubestronaut-learning" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Golden Kubestronaut Learning</h3>
+          <p>Comprehensive Kubernetes certification study guides covering all CNCF certifications. Interactive quizzes, flashcards, lab exercises, and PDF generation.</p>
+          <div class="project-tags">
+            <span>MkDocs</span><span>Python</span><span>Kubernetes</span><span>Education</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-network-wired project-icon"></i>
+            <div class="project-links-top">
+              <a href="https://github.com/pmady/ingress2gateway" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Ingress2Gateway</h3>
+          <p>Convert Kubernetes Ingress resources to Gateway API. Supports ALB, GCE, Nginx annotations with automated migration and validation.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Kubernetes</span><span>Gateway API</span><span>Helm</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title fade-in">Technical Expertise</h2>
+      <div class="skills-grid fade-in">
+
+        <div class="skill-category">
+          <h3><i class="fas fa-dharmachakra"></i> Container Orchestration &amp; GitOps</h3>
+          <div class="skill-tags">
+            <span>Kubernetes</span><span>ArgoCD</span><span>Docker</span><span>Crossplane</span><span>Helm</span><span>Flux</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+          <div class="skill-tags">
+            <span>AWS</span><span>Azure</span><span>EKS</span><span>EC2</span><span>S3</span><span>IAM</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-chart-area"></i> Observability</h3>
+          <div class="skill-tags">
+            <span>Prometheus</span><span>Grafana</span><span>OpenTelemetry</span><span>Splunk</span><span>Datadog</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-shield-halved"></i> Policy &amp; Security</h3>
+          <div class="skill-tags">
+            <span>Kyverno</span><span>OPA</span><span>Zero-Trust</span><span>RBAC</span><span>Network Policies</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-code-branch"></i> CI/CD</h3>
+          <div class="skill-tags">
+            <span>GitHub Actions</span><span>Jenkins</span><span>Flux</span><span>UrbanCode Deploy</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Languages &amp; Tools</h3>
+          <div class="skill-tags">
+            <span>Go</span><span>Python</span><span>Rust</span><span>Terraform</span><span>gRPC</span><span>Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-microchip"></i> GPU / AI Infrastructure</h3>
+          <div class="skill-tags">
+            <span>NVIDIA NVML</span><span>CUDA</span><span>vLLM</span><span>Triton</span><span>KEDA</span><span>Volcano</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Big Data</h3>
+          <div class="skill-tags">
+            <span>PrestoDB</span><span>Trino</span><span>Apache Superset</span><span>Alluxio</span><span>Jupyter</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing & Blog -->
+  <section class="section" id="writing">
+    <div class="container">
+      <h2 class="section-title fade-in">Technical Writing</h2>
+      <p class="section-subtitle fade-in">Industry publications, foundation blogs, and personal technical writing</p>
+
+      <!-- Industry Writing -->
+      <h3 class="subsection-title fade-in"><i class="fas fa-industry"></i> Industry Writing</h3>
+      <div class="writing-grid fade-in">
+        <a href="https://cloudnativenow.com/author/pavan-madduri/" target="_blank" class="writing-card">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Native Now</h3>
+          <p>Cloud-native infrastructure &amp; Kubernetes articles</p>
+        </a>
+        <a href="https://platformengineering.com/author/pavan-madduri/" target="_blank" class="writing-card">
+          <i class="fas fa-layer-group"></i>
+          <h3>Platform Engineering</h3>
+          <p>Platform engineering &amp; IDP insights</p>
+        </a>
+      </div>
+
+      <!-- Academic / Foundation Writing -->
+      <h3 class="subsection-title fade-in"><i class="fas fa-graduation-cap"></i> Academic &amp; Foundation Writing</h3>
+      <div class="writing-featured fade-in">
+        <a href="https://www.cncf.io/blog/2026/04/20/from-public-static-void-main-to-golden-kubestronaut-the-art-of-unlearning/" target="_blank" class="writing-feature-card">
+          <div class="writing-feature-badge">CNCF Blog</div>
+          <h4>From public static void main to Golden Kubestronaut: The Art of Unlearning</h4>
+          <p>Journey from Java developer to earning all CNCF certifications &mdash; what it takes to unlearn and re-learn in the cloud-native world.</p>
+        </a>
+        <a href="https://www.cncf.io/blog/2026/04/06/peer-to-peer-acceleration-for-ai-model-distribution-with-dragonfly/" target="_blank" class="writing-feature-card">
+          <div class="writing-feature-badge">CNCF Blog</div>
+          <h4>Peer-to-Peer Acceleration for AI Model Distribution with Dragonfly</h4>
+          <p>How Dragonfly&rsquo;s P2P architecture accelerates large AI model downloads &mdash; HuggingFace and ModelScope integration.</p>
+        </a>
+        <a href="https://techblog.comsoc.org/2026/03/30/the-financial-trap-of-autonomous-networks-scaling-agentic-ai-in-the-telecom-core/" target="_blank" class="writing-feature-card">
+          <div class="writing-feature-badge">IEEE ComSoc</div>
+          <h4>The Financial Trap of Autonomous Networks: Scaling Agentic AI in the Telecom Core</h4>
+          <p>Challenges of scaling agentic AI in telecom infrastructure &mdash; cost implications and architectural considerations for autonomous networks.</p>
+        </a>
+      </div>
+
+      <!-- Personal Blogs -->
+      <h3 class="subsection-title fade-in"><i class="fas fa-pen-nib"></i> Personal Blogs</h3>
+      <div class="writing-grid writing-grid-3 fade-in">
+        <a href="https://pavanmadduri.wordpress.com/" target="_blank" class="writing-card">
+          <i class="fab fa-wordpress"></i>
+          <h3>WordPress</h3>
+          <p>DevOps best practices &amp; K8s deep-dives</p>
+        </a>
+        <a href="https://medium.com/@pavan4devops" target="_blank" class="writing-card">
+          <i class="fab fa-medium"></i>
+          <h3>Medium</h3>
+          <p>Technical tutorials &amp; architecture guides</p>
+        </a>
+        <a href="https://dev.to/pavan_madduri" target="_blank" class="writing-card">
+          <i class="fab fa-dev"></i>
+          <h3>Dev.to</h3>
+          <p>Developer-focused cloud-native content</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Conferences & Speaking -->
+  <section class="section section-alt" id="conferences">
+    <div class="container">
+      <h2 class="section-title fade-in">Conferences &amp; Speaking</h2>
+      <p class="section-subtitle fade-in">Conference presentations on cloud-native infrastructure, GitOps, and HPC</p>
+
+      <div class="talks-grid fade-in">
+
+        <div class="talk-card">
+          <div class="talk-conference">
+            <span class="talk-event">HPSF Conference 2026</span>
+            <span class="talk-track">Productivity, Performance &amp; the HPC Pipeline</span>
+          </div>
+          <h3>GitOps for HPC: Bringing Cloud-Native DevOps Practices to High Performance Computing Environments</h3>
+          <p class="talk-speaker">Pavan Madduri, W.W. Grainger</p>
+          <p class="talk-desc">Applying ArgoCD, Kubernetes, and GitOps workflows to HPC environments &mdash; bridging the gap between cloud-native DevOps and scientific computing.</p>
+          <div class="talk-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Chicago River Ballroom A-D</span>
+            <span><i class="fas fa-signal"></i> Intermediate</span>
+          </div>
+          <div class="talk-links">
+            <a href="https://hpsf2026.sched.com/event/2HnP3" target="_blank"><i class="fas fa-calendar"></i> Schedule</a>
+            <a href="https://hosted-files.sched.co/hpsf2026/52/GitOps_for_HPC_HPSF2026-shared.pptx.pdf" target="_blank"><i class="fas fa-file-powerpoint"></i> Slides</a>
+            <a href="https://youtu.be/T1cG78cbffc?si=0FTu1cQ9wH_ZE3VO" target="_blank"><i class="fab fa-youtube"></i> Video</a>
+          </div>
+        </div>
+
+        <div class="talk-card">
+          <div class="talk-conference">
+            <span class="talk-event">HPSF Conference 2026</span>
+            <span class="talk-track">Building &amp; Sustaining Community</span>
+          </div>
+          <h3>DevOps for Scientific Software: Tools, Practices, and Automation Strategies</h3>
+          <p class="talk-speaker">Pavan Madduri, W.W. Grainger</p>
+          <p class="talk-desc">CI/CD pipelines, testing strategies, and automation for scientific and research software development &mdash; making open source science reproducible and maintainable.</p>
+          <div class="talk-meta">
+            <span><i class="fas fa-map-marker-alt"></i> Chicago River Ballroom A-D</span>
+            <span><i class="fas fa-signal"></i> Beginner</span>
+          </div>
+          <div class="talk-links">
+            <a href="https://hpsf2026.sched.com/event/2HAPn" target="_blank"><i class="fas fa-calendar"></i> Schedule</a>
+            <a href="https://hosted-files.sched.co/hpsf2026/cf/DevOps_Scientific_HPSF2026-shared.pptx.pdf" target="_blank"><i class="fas fa-file-powerpoint"></i> Slides</a>
+            <a href="https://youtu.be/CnlTjDeHgl0?si=XCwbReCOPscgORBJ" target="_blank"><i class="fab fa-youtube"></i> Video</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Judging & Review Placeholder -->
+      <h3 class="subsection-title fade-in"><i class="fas fa-gavel"></i> Judging &amp; Peer Review</h3>
+      <p class="section-note fade-in">Details coming soon &mdash; share your judging, peer review, and committee service to add here.</p>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title fade-in">Let's Connect</h2>
+      <p class="section-subtitle fade-in">Always open to connecting with fellow engineers in the cloud-native and AI/ML space</p>
+      <div class="contact-grid fade-in">
+        <a href="https://www.linkedin.com/in/pavanmadduri/" target="_blank" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/pmady" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=au0O-8oAAAAJ" target="_blank" class="contact-card">
+          <i class="fas fa-graduation-cap"></i>
+          <span>Google Scholar</span>
+        </a>
+        <a href="https://www.researchgate.net/profile/Pavan-Madduri-2" target="_blank" class="contact-card">
+          <i class="fab fa-researchgate"></i>
+          <span>ResearchGate</span>
+        </a>
+        <a href="https://medium.com/@pavan4devops" target="_blank" class="contact-card">
+          <i class="fab fa-medium"></i>
+          <span>Medium</span>
+        </a>
+        <a href="https://dev.to/pavan_madduri" target="_blank" class="contact-card">
+          <i class="fab fa-dev"></i>
+          <span>Dev.to</span>
+        </a>
+        <a href="mailto:pavan4devops@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Pavan Madduri. Built with passion for open source.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
