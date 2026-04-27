@@ -34,6 +34,10 @@
         <li><a href="#writing" class="nav-link">Writing</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
     </div>
   </nav>
 
@@ -45,7 +49,7 @@
         <img src="assets/img/profile.jpg" alt="Pavan Madduri" class="hero-img">
       </div>
       <h1 class="hero-title">Pavan Madduri</h1>
-      <p class="hero-subtitle">Senior Cloud Platform Engineer</p>
+      <p class="hero-subtitle"><span id="typed-text">Senior Cloud Platform Engineer</span><span class="typing-cursor"></span></p>
       <p class="hero-tagline">Building GPU/AI infrastructure at scale &middot; CNCF Golden Kubestronaut &middot; Open Source &middot; Researcher</p>
       <div class="hero-badges">
         <span class="badge badge-gold"><i class="fas fa-certificate"></i> Golden Kubestronaut</span>
@@ -105,6 +109,69 @@
           <div class="stat-card">
             <div class="stat-number" data-count="16">0</div>
             <div class="stat-label">CNCF Certifications</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Activity -->
+      <div class="github-activity fade-in">
+        <h3 class="github-activity-title"><i class="fab fa-github"></i> GitHub Activity</h3>
+        <div class="github-heatmap">
+          <img src="https://ghchart.rshah.org/00d4ff/pmady" alt="GitHub Contribution Heatmap" id="gh-heatmap">
+        </div>
+        <div class="github-streak">
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=pmady&theme=github-dark-blue&hide_border=true&background=1a1a2e&ring=00d4ff&fire=ffd700&currStreakLabel=00d4ff" alt="GitHub Streak" id="gh-streak">
+          <img src="https://github-readme-stats.vercel.app/api?username=pmady&show_icons=true&count_private=true&theme=github_dark&hide_border=true&bg_color=1a1a2e&title_color=00d4ff&icon_color=ffd700&text_color=a0a0b8" alt="GitHub Stats" id="gh-stats">
+        </div>
+      </div>
+
+      <!-- Contribution Journey Timeline -->
+      <div class="github-activity fade-in" style="margin-top: 56px;">
+        <h3 class="github-activity-title"><i class="fas fa-route"></i> Open Source Journey</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2026 &mdash; Present</div>
+            <div class="timeline-content">
+              <h4>GPU NUMA Topology &amp; AI Infrastructure</h4>
+              <p>Volcano GPU NUMA-aware scheduler (3-repo PR), KEDA GPU Scaler, Kube Topology Agent, Dragonfly Community Member, IEEE peer reviewer, HPSF &amp; InfoQ speaker</p>
+              <div class="timeline-tags">
+                <span>Volcano</span><span>KEDA</span><span>Dragonfly</span><span>IEEE</span><span>HPSF</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025</div>
+            <div class="timeline-content">
+              <h4>Cloud-Native Observability &amp; Platform Engineering</h4>
+              <p>OTel GPU Receiver, OpenTelemetry docs contributions, Kubernetes website docs PRs, published 6 peer-reviewed papers on AI/ML infrastructure</p>
+              <div class="timeline-tags">
+                <span>OpenTelemetry</span><span>Kubernetes</span><span>Research</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h4>ASWF &amp; Foundation Contributions</h4>
+              <p>OpenColorIO release signing &amp; Vulkan tests, OpenCue subscription recalculation, OpenImageIO bug fix, RAWtoACES docs, xSTUDIO links fix</p>
+              <div class="timeline-tags">
+                <span>OpenColorIO</span><span>OpenCue</span><span>OpenImageIO</span><span>RAWtoACES</span><span>xSTUDIO</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h4>Golden Kubestronaut &amp; Certification Journey</h4>
+              <p>Achieved all 16 CNCF certifications including CKS, CKA, CKAD, KCNA, KCSA plus 11 Golden-tier certs. Published first peer-reviewed papers on Kubernetes and zero-trust infrastructure</p>
+              <div class="timeline-tags">
+                <span>CNCF</span><span>Kubestronaut</span><span>Certifications</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
