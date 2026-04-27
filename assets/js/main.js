@@ -1,4 +1,36 @@
 // ========================================
+// Theme Toggle
+// ========================================
+const themeToggle = document.getElementById('theme-toggle');
+const savedTheme = localStorage.getItem('theme') || 'dark';
+if (savedTheme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+
+themeToggle.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  updateGitHubImages(next);
+});
+
+function updateGitHubImages(theme) {
+  const heatmap = document.getElementById('gh-heatmap');
+  const streak = document.getElementById('gh-streak');
+  const stats = document.getElementById('gh-stats');
+  if (theme === 'light') {
+    if (heatmap) heatmap.src = 'https://ghchart.rshah.org/0077cc/pmady';
+    if (streak) streak.src = 'https://github-readme-streak-stats.herokuapp.com/?user=pmady&theme=default&hide_border=true&background=ffffff&ring=0077cc&fire=b8860b&currStreakLabel=0077cc';
+    if (stats) stats.src = 'https://github-readme-stats.vercel.app/api?username=pmady&show_icons=true&count_private=true&theme=default&hide_border=true&bg_color=ffffff&title_color=0077cc&icon_color=b8860b&text_color=4a4a6a';
+  } else {
+    if (heatmap) heatmap.src = 'https://ghchart.rshah.org/00d4ff/pmady';
+    if (streak) streak.src = 'https://github-readme-streak-stats.herokuapp.com/?user=pmady&theme=github-dark-blue&hide_border=true&background=1a1a2e&ring=00d4ff&fire=ffd700&currStreakLabel=00d4ff';
+    if (stats) stats.src = 'https://github-readme-stats.vercel.app/api?username=pmady&show_icons=true&count_private=true&theme=github_dark&hide_border=true&bg_color=1a1a2e&title_color=00d4ff&icon_color=ffd700&text_color=a0a0b8';
+  }
+}
+
+if (savedTheme === 'light') updateGitHubImages('light');
+
+// ========================================
 // Navigation
 // ========================================
 const navbar = document.getElementById('navbar');
@@ -118,3 +150,45 @@ function createParticles() {
 }
 
 createParticles();
+
+// ========================================
+// Typing Animation
+// ========================================
+const typedEl = document.getElementById('typed-text');
+const titles = [
+  'Senior Cloud Platform Engineer',
+  'CNCF Golden Kubestronaut',
+  'Open Source Contributor',
+  'GPU/AI Infrastructure Builder',
+  'IEEE Peer Reviewer'
+];
+let titleIdx = 0;
+let charIdx = 0;
+let deleting = false;
+let typingTimeout;
+
+function typeLoop() {
+  const current = titles[titleIdx];
+  if (!deleting) {
+    typedEl.textContent = current.substring(0, charIdx + 1);
+    charIdx++;
+    if (charIdx === current.length) {
+      deleting = true;
+      typingTimeout = setTimeout(typeLoop, 2000);
+      return;
+    }
+    typingTimeout = setTimeout(typeLoop, 60);
+  } else {
+    typedEl.textContent = current.substring(0, charIdx - 1);
+    charIdx--;
+    if (charIdx === 0) {
+      deleting = false;
+      titleIdx = (titleIdx + 1) % titles.length;
+      typingTimeout = setTimeout(typeLoop, 400);
+      return;
+    }
+    typingTimeout = setTimeout(typeLoop, 30);
+  }
+}
+
+setTimeout(typeLoop, 2500);
