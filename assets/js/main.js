@@ -192,3 +192,76 @@ function typeLoop() {
 }
 
 setTimeout(typeLoop, 2500);
+
+// ========================================
+// Scroll Progress Bar
+// ========================================
+const scrollProgress = document.getElementById('scroll-progress');
+
+function updateScrollProgress() {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const percent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  if (scrollProgress) scrollProgress.style.width = percent + '%';
+}
+
+window.addEventListener('scroll', updateScrollProgress);
+
+// ========================================
+// Back-to-Top Button
+// ========================================
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (backToTop) {
+    backToTop.classList.toggle('visible', window.scrollY > 600);
+  }
+});
+
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+// ========================================
+// Staggered Fade-in Observer
+// ========================================
+const staggerElements = document.querySelectorAll('.fade-in-stagger');
+
+const staggerObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -40px 0px'
+});
+
+staggerElements.forEach(el => staggerObserver.observe(el));
+
+// ========================================
+// 3D Tilt Effect on Project Cards
+// ========================================
+const tiltCards = document.querySelectorAll('.tilt-card');
+
+tiltCards.forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -6;
+    const rotateY = ((x - centerX) / centerX) * 6;
+    card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transition = 'transform 0.4s ease';
+    card.style.transform = 'perspective(800px) rotateX(0) rotateY(0) translateY(0)';
+    setTimeout(() => { card.style.transition = ''; }, 400);
+  });
+});

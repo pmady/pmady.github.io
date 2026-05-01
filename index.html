@@ -17,6 +17,9 @@
 </head>
 <body>
 
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
@@ -93,7 +96,7 @@
             <strong>OpenTelemetry</strong>, and more.
           </p>
         </div>
-        <div class="about-stats">
+        <div class="about-stats fade-in-stagger">
           <div class="stat-card">
             <div class="stat-number" data-count="26">0</div>
             <div class="stat-label">Open Source PRs</div>
@@ -196,7 +199,7 @@
 
       <!-- Kubestronaut Core (5) -->
       <h3 class="subsection-title fade-in"><i class="fas fa-star"></i> Kubestronaut Core Certifications</h3>
-      <div class="certs-grid certs-grid-5 fade-in">
+      <div class="certs-grid certs-grid-5 fade-in fade-in-stagger">
         <div class="cert-card cert-gold">
           <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
           <h3>CKS</h3>
@@ -226,7 +229,7 @@
 
       <!-- Golden Kubestronaut Additional Certs -->
       <h3 class="subsection-title fade-in"><i class="fas fa-certificate"></i> Golden Kubestronaut Certifications</h3>
-      <div class="certs-grid fade-in">
+      <div class="certs-grid fade-in fade-in-stagger">
         <div class="cert-card">
           <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
           <h3>PCA</h3>
@@ -643,9 +646,9 @@
     <div class="container">
       <h2 class="section-title fade-in">Featured Projects</h2>
       <p class="section-subtitle fade-in">Open source tools for GPU autoscaling, observability, and topology-aware infrastructure</p>
-      <div class="projects-grid fade-in">
+      <div class="projects-grid fade-in fade-in-stagger">
 
-        <div class="project-card">
+        <div class="project-card tilt-card">
           <div class="project-header">
             <i class="fas fa-microchip project-icon"></i>
             <div class="project-links-top">
@@ -660,7 +663,7 @@
           <p class="project-ref">Referenced in <a href="https://github.com/kedacore/keda/issues/7538" target="_blank">KEDA #7538</a></p>
         </div>
 
-        <div class="project-card">
+        <div class="project-card tilt-card">
           <div class="project-header">
             <i class="fas fa-chart-line project-icon"></i>
             <div class="project-links-top">
@@ -674,7 +677,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card tilt-card">
           <div class="project-header">
             <i class="fas fa-diagram-project project-icon"></i>
             <div class="project-links-top">
@@ -688,7 +691,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card tilt-card">
           <div class="project-header">
             <i class="fas fa-brain project-icon"></i>
             <div class="project-links-top">
@@ -702,7 +705,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card tilt-card">
           <div class="project-header">
             <i class="fas fa-book-open project-icon"></i>
             <div class="project-links-top">
@@ -716,7 +719,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card tilt-card">
           <div class="project-header">
             <i class="fas fa-network-wired project-icon"></i>
             <div class="project-links-top">
@@ -738,7 +741,7 @@
   <section class="section section-alt" id="skills">
     <div class="container">
       <h2 class="section-title fade-in">Technical Expertise</h2>
-      <div class="skills-grid fade-in">
+      <div class="skills-grid fade-in fade-in-stagger">
 
         <div class="skill-category">
           <h3><i class="fas fa-dharmachakra"></i> Container Orchestration &amp; GitOps</h3>
@@ -1080,6 +1083,11 @@
       <p>&copy; 2026 Pavan Madduri. Built with passion for open source.</p>
     </div>
   </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="assets/js/main.js"></script>
 </body>
