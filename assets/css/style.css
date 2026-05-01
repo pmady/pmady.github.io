@@ -283,8 +283,6 @@ img {
   height: 140px;
   margin: 0 auto 28px;
   border-radius: 50%;
-  padding: 3px;
-  background: var(--accent-gradient);
   box-shadow: 0 0 40px rgba(0, 212, 255, 0.2);
 }
 
@@ -1463,6 +1461,186 @@ img {
   border-top: 1px solid var(--border);
   color: var(--text-muted);
   font-size: 0.85rem;
+}
+
+/* ========================================
+   Scroll Progress Bar
+   ======================================== */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--accent-gradient);
+  z-index: 1100;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+}
+
+[data-theme="light"] .scroll-progress {
+  box-shadow: 0 0 8px rgba(0, 119, 204, 0.3);
+}
+
+/* ========================================
+   Animated Hero Border
+   ======================================== */
+.hero-img-wrapper {
+  position: relative;
+  background: none;
+  padding: 4px;
+}
+
+.hero-img-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from var(--hero-rotate, 0deg),
+    #667eea, #00d4ff, #ffd700, #00e676, #bb86fc, #667eea
+  );
+  animation: hero-spin 4s linear infinite;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+.hero-img-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from var(--hero-rotate, 0deg),
+    #667eea, #00d4ff, #ffd700, #00e676, #bb86fc, #667eea
+  );
+  animation: hero-spin 4s linear infinite;
+  z-index: -1;
+}
+
+@property --hero-rotate {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes hero-spin {
+  to { --hero-rotate: 360deg; }
+}
+
+/* Fallback for browsers without @property */
+@supports not (background: conic-gradient(from 0deg, red, blue)) {
+  .hero-img-wrapper::before,
+  .hero-img-wrapper::after {
+    background: var(--accent-gradient);
+    animation: none;
+  }
+}
+
+/* ========================================
+   Card Glow Effects
+   ======================================== */
+.project-card:hover,
+.contrib-card:hover,
+.writing-feature-card:hover,
+.talk-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.12), 0 0 0 1px rgba(0, 212, 255, 0.15);
+}
+
+[data-theme="light"] .project-card:hover,
+[data-theme="light"] .contrib-card:hover,
+[data-theme="light"] .writing-feature-card:hover,
+[data-theme="light"] .talk-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 119, 204, 0.1), 0 0 0 1px rgba(0, 119, 204, 0.12);
+}
+
+.stat-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.15);
+}
+
+.cert-card:hover {
+  box-shadow: 0 8px 32px rgba(255, 215, 0, 0.12);
+}
+
+/* ========================================
+   Staggered Fade-in
+   ======================================== */
+.fade-in-stagger > *:nth-child(1) { transition-delay: 0s; }
+.fade-in-stagger > *:nth-child(2) { transition-delay: 0.08s; }
+.fade-in-stagger > *:nth-child(3) { transition-delay: 0.16s; }
+.fade-in-stagger > *:nth-child(4) { transition-delay: 0.24s; }
+.fade-in-stagger > *:nth-child(5) { transition-delay: 0.32s; }
+.fade-in-stagger > *:nth-child(6) { transition-delay: 0.40s; }
+.fade-in-stagger > *:nth-child(7) { transition-delay: 0.48s; }
+.fade-in-stagger > *:nth-child(8) { transition-delay: 0.56s; }
+
+.fade-in-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================================
+   3D Tilt
+   ======================================== */
+.tilt-card {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.tilt-card:hover {
+  transition: none;
+}
+
+/* ========================================
+   Back-to-Top Button
+   ======================================== */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  color: #0a0a1a;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(16px);
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 212, 255, 0.25);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+[data-theme="light"] .back-to-top {
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 119, 204, 0.2);
+}
+
+[data-theme="light"] .back-to-top:hover {
+  box-shadow: 0 8px 32px rgba(0, 119, 204, 0.3);
 }
 
 /* ========================================
