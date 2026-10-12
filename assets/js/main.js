@@ -159,8 +159,7 @@ const titles = [
   'Senior Cloud Platform Engineer',
   'CNCF Golden Kubestronaut',
   'Open Source Contributor',
-  'GPU/AI Infrastructure Builder',
-  'IEEE Peer Reviewer'
+  'GPU/AI Infrastructure Engineer'
 ];
 let titleIdx = 0;
 let charIdx = 0;
